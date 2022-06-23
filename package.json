@@ -1,10 +1,11 @@
 {
-  "name": "node_sqlite3",
-  "version": "1.0.0",
+  "name": "@comdec_/node_sqlite3",
+  "version": "1.1.0",
   "description": "A small node package to create basic sqlite binding for nodeJS using python",
   "main": "index.js",
   "scripts": {
-    "test": "cd test && node ."
+    "test": "cd test && node .",
+    "update" : "git push origin master && npm publish --access public"
   },
   "keywords": [
     "sqlite",

@@ -5,6 +5,7 @@
     - [Summary](#summary)
   - [Introduction](#introduction)
   - [Requirement](#requirement)
+  - [Installation](#installation)
   - [QuickStart](#quickstart)
       - [Connecting](#connecting)
       - [Running SQL](#running-sql)
@@ -30,12 +31,26 @@ const { rows } = await connection.runSql("SELECT * FROM mytable WHERE test > 1")
 + You have to install [`python3.8`](https://www.python.org/downloads/) or higher
 + You have to install [`nodejs v16.8.0`](https://nodejs.org/en/download/) or higher
 
+## Installation
+
+```sh
+npm i @comdec_/node_sqlite3
+# You can either install the package with npm or yarn
+yarn add @comdec_/node_sqlite3
+```
+
+Then import the module at the top of your file :
+
+```js
+const sqlite = require("@comdec_/node_sqlite3");
+```
+
 ## QuickStart
 
 #### Connecting
 You can connect to your databae simply by importing the package and instantiating the connection :
 ```js
-const sqlite = require("node_sqlite3");
+const sqlite = require("@comdec_/node_sqlite3");
 
 const connection = new sqlite.Connection("path/to/db/file");
 ```
