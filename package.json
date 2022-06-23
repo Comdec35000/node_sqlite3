@@ -1,0 +1,18 @@
+{
+  "name": "node_sqlite3",
+  "version": "1.0.0",
+  "description": "A small node package to create basic sqlite binding for nodeJS using python",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd test && node ."
+  },
+  "keywords": [
+    "sqlite",
+    "sqlite3"
+  ],
+  "author": "Comdec_",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-table": "^0.0.9"
+  }
+}
